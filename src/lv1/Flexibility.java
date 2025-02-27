@@ -27,9 +27,16 @@ class Solution {
     }
 
     public int getMaxPermissionRange(int schedule) {
-        if (schedule / 100 >= 50) {
+        if (schedule % 100 >= 50) {
             return schedule + 50;
         }
         return schedule + 10;
+    }
+}
+
+public class Flexibility {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.getMaxPermissionRange(1050));
     }
 }
