@@ -1,4 +1,4 @@
-package lv1;
+package lv1.유연근무제;
 
 class Solution {
     public int solution(int[] schedules, int[][] timelogs, int startday) {
